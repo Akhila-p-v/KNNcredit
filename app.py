@@ -122,18 +122,18 @@ col1, col2 = st.columns(2)
 
 # Input fields for the specified features in two columns
 with col1:
-    outstanding_debt = st.number_input("Outstanding Debt", min_value=0, max_value=1000000, value=0)
-    interest_rate = st.number_input("Interest Rate (%)", min_value=0.0, max_value=100.0, value=15.0)
-    credit_history_age = st.number_input("Credit History Age (Days)", min_value=0, max_value=36500, value=1825)  # Updated to days
-    changed_credit_limit = st.number_input("Changed Credit Limit", min_value=0, max_value=100000, value=0)
-    delay_from_due_date = st.number_input("Delay from Due Date (Days)", min_value=0, max_value=365, value=0)
+    outstanding_debt = st.number_input("Outstanding Debt", min_value=0.0, max_value=4998.070000, value=0.0, step=1.0)
+    interest_rate = st.number_input("Interest Rate (%)", min_value=0.0, max_value=34.00000, value=15.0, step=0.1)
+    credit_history_age = st.number_input("Credit History Age (Days)", min_value=0.0, max_value=404.0, value=200.0, step=1.0)  # Updated default value to be within range
+    changed_credit_limit = st.number_input("Changed Credit Limit", min_value=0.0, max_value=29.980000, value=0.0, step=0.1)
+    delay_from_due_date = st.number_input("Delay from Due Date (Days)", min_value=0.0, max_value=62.0, value=0.0, step=1.0)
 
 with col2:
-    monthly_balance = st.number_input("Monthly Balance", min_value=-100000, max_value=1000000, value=10000)
-    credit_utilization_ratio = st.number_input("Credit Utilization Ratio (%)", min_value=0.0, max_value=100.0, value=30.0)
-    num_of_delayed_payments = st.number_input("Number of Delayed Payments", min_value=0, max_value=10, value=0)
-    annual_income = st.number_input("Annual Income", min_value=0, max_value=1000000, value=50000)
-    total_emi_per_month = st.number_input("Total EMI per Month", min_value=0, max_value=100000, value=0)
+    monthly_balance = st.number_input("Monthly Balance", min_value=-100000.0, max_value=1183.930696, value=1000.0, step=1.0)  # Updated default value to be within range
+    credit_utilization_ratio = st.number_input("Credit Utilization Ratio (%)", min_value=0.0, max_value=50.0, value=30.0, step=0.1)
+    num_of_delayed_payments = st.number_input("Number of Delayed Payments", min_value=0.0, max_value=25.0, value=0.0, step=1.0)
+    annual_income = st.number_input("Annual Income", min_value=0.0, max_value=179987.280000, value=50000.0, step=100.0)
+    total_emi_per_month = st.number_input("Total EMI per Month", min_value=0.0, max_value=1779.103254, value=0.0, step=1.0)
 
 # Creating empty columns around the button for centering
 col1, col2, col3 = st.columns([2, 1, 2])
